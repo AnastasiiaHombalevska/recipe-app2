@@ -1,0 +1,38 @@
+.recipe__details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  padding: 10px;
+  
+  &--image {
+    width: 350px;
+  }
+
+  &-link {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: antiquewhite;
+    }
+  }
+
+  &-close-icon {
+    padding: 10px;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+}

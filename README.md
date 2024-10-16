@@ -25,6 +25,7 @@ Users should be able to:
 ### Built with
 - [TheMealDB](https://www.themealdb.com/api.php?ref=apilist.fun) as API.
 - React.
+- React Router
 - State manager.
 - Debounced search.
 - Pagination.

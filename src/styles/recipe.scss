@@ -1,0 +1,19 @@
+.recipe__card {
+  width: 45%;
+  padding: 10px;
+
+  &-image {
+    width: 100%;
+  }
+
+  &-link {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transform: 0.3s;
+
+    &:hover {
+      color: antiquewhite;
+    }
+  }
+}
