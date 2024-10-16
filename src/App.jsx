@@ -7,7 +7,7 @@ import Basket from './components/basket';
 function App() {
   return (
     <section>
-      <Router>
+      <Router basename="/recipes-app">
         <Routes>
           <Route path="/" element={<Recipes />} />
           <Route path="/recipe/:id" element={<RecipeDetails />} />

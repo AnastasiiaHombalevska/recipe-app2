@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import Recipe from "./recipe";
 import Pagination from "./pagination";
 import { debounce } from "lodash";
+import axios from 'axios';
 
 export default function Recipes() {
   const [recipes, setRecipes] = useState([]);
@@ -23,13 +24,18 @@ export default function Recipes() {
   const currentPage = filteredRecipes.slice(firstIndexItem, lastIndexItem);
 
   useEffect(() => {
-    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`)
-      .then(res => res.json())
-      .then(data => {
-        const meals = data.meals || [];
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
+        const meals = response.data.meals || [];
         setRecipes(meals);
         setFilteredRecipes(meals);
-      })
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+  
+    fetchData();
   }, [query]);
 
   function normalize(word) {
