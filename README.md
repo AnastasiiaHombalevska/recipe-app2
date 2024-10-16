@@ -1,8 +1,30 @@
-# React + Vite
+# React + Vite application for displaying recipes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[DEMO LINK]()
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+- [My process](#my-process)
+  - [Built with](#built-with)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View all recipes.
+- View a single recipe.
+- Filter recipes by category.
+- View your favorite recipes.
+
+## My process
+
+### Built with
+- [TheMealDB](https://www.themealdb.com/api.php?ref=apilist.fun) as API.
+- React.
+- State manager.
+- Debounced search.
+- Pagination.
