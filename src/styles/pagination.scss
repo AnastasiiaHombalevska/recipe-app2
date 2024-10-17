@@ -1,39 +1,37 @@
-/* Pagination.css */
-
 .pagination {
   display: flex;
   list-style: none;
-  justify-content: center; /* Центрування по горизонталі */
+  justify-content: center;
   padding: 0;
-  margin: 20px 0; /* Відступи зверху та знизу */
+  margin: 20px 0;
 }
 
 .page-item {
-  margin: 0 5px; /* Відстань між пунктами */
+  margin: 0 5px;
 }
 
 .page-link {
   display: block;
-  padding: 10px 15px; /* Внутрішні відступи */
+  padding: 10px 15px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.87); /* Колір тексту, узятий з :root */
-  background-color: #3a3a3a; /* Темніший фон для контрасту */
-  border: 1px solid rgba(255, 255, 255, 0.12); /* Світліша границя */
-  border-radius: 5px; /* Закруглені кути */
-  transition: background-color 0.3s; /* Анімація зміни кольору */
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #3a3a3a;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .page-link:hover {
-  background-color: #4a4a4a; /* Зміна кольору при наведенні */
+  background-color: #4a4a4a;
 }
 
 .page-item.disabled .page-link {
-  color: rgba(255, 255, 255, 0.38); /* Світліший колір для неактивних кнопок */
-  pointer-events: none; /* Заборона наведених дій */
-  background-color: transparent; /* Прозорий фон для неактивних кнопок */
+  color: rgba(255, 255, 255, 0.38);
+  pointer-events: none;
+  background-color: transparent;
 }
 
 .page-item.active .page-link {
-  background-color: #007bff; /* Колір для активної сторінки */
-  color: white; /* Колір тексту для активної сторінки */
+  background-color: #007bff;
+  color: white;
 }
