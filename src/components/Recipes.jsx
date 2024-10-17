@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
-import Recipe from "./recipe";
-import Pagination from "./pagination";
+import Recipe from "./Recipe";
+import Pagination from "./Pagination";
 import { debounce } from "lodash";
 import axios from 'axios';
 
