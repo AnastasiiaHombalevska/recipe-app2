@@ -1,7 +1,7 @@
-@import "./styles/recipe.scss";
-@import "./styles/recipes.scss";
-@import "./styles/pagination.scss";
-@import "./styles/recipeDetails.scss";
+@use "./styles/recipe.scss";
+@use "./styles/recipes.scss";
+@use "./styles/pagination.scss";
+@use "./styles/recipeDetails.scss";
 
 html,
 a,
@@ -15,7 +15,7 @@ img {
   padding: 0;
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-}
+// #root {
+//   max-width: 1280px;
+//   margin: 0 auto;
+// }
